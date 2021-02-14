@@ -6,7 +6,7 @@ public class EncapsulationInfo {
 		Laptop l1 = new Laptop();
 //		l1.price = 23;
 		l1.setPrice(31);
-
+		System.out.println(l1.getPrice());
 	}
 	
 //	public
@@ -31,12 +31,24 @@ class Laptop{
 	
 	public void setPrice(int price) {
 //		is the user an Admin
-		boolean isAdmin = false;
+		boolean isAdmin = true;
 		if(!isAdmin) {
 			System.out.println("You can not set the price.");
 		}else {
 			this.price = price;
 		}
 		
+	}
+
+	public int getRam() {
+		return ram;
+	}
+
+	public void setRam(int ram) {
+		this.ram = ram;
+	}
+
+	public int getPrice() {
+		return price;
 	}
 }
