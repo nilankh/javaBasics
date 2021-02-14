@@ -7,8 +7,19 @@ public class EncapsulationInfo {
 
 	}
 	
-	public void doWork() {
-		System.out.println("Working working");
+//	public
+//	public void doWork() {
+//		System.out.println("Working working");
+//	}
+	
+//	default
+//	void doWork() {
+//		System.out.println("Working working");
+//	}
+	
+//	private
+	private void doWork() {
+		System.out.println("Working Working");
 	}
 
 }
